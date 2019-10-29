@@ -1,0 +1,273 @@
+html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100vh;
+      background: url(hero.jpg) no-repeat 50% 50%;
+      background-size: cover;
+      font-family: Helvetica;
+      /* background: #c0ab9a; */
+}
+
+.title {
+    position: absolute;
+    top: 45%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+}
+
+p {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-60%, -50%);
+    color: white;
+    font-size: 1.8em;
+    text-align: center;
+    line-height: 1.6;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 12px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.menu-strip {
+    background: white;
+    position: fixed;
+    width: 100vw;
+    height: 125px;
+    border-right: 1px solid rgba(0,0,0,0.1);
+    z-index: 1;
+}
+
+.toggle-btn {
+    position: absolute;
+    top: 60%;
+    left: 12%;
+    transform: translate(-50%, -50%);
+}
+
+.toggle-btn ion-icon {
+    font-size: 28px;
+    color: black;
+}
+.nav .menu {
+    position: absolute;
+    width: 0%;
+    height: 100vh;
+    left: 0%;
+    background: #fff;
+}
+
+
+
+.images {
+    position: absolute;
+    width: 0%;
+    height: 100vh;
+    left: 40%;
+    background: url(01.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.bg {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      background: red;
+}
+
+.nav .menu ul {
+    list-style: none;
+    position: absolute;
+    top: 60%;
+    left: 36%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.nav .menu ul li {
+    color: gray;
+    font-weight: lighter;
+    font-size: 30px;
+    line-height: 60px;
+}
+
+#order {
+      font-size: 16px;
+      font-weight: lighter;
+      color: #afafaf;
+}
+
+#tag {
+      font-size: 18px;
+      font-weight: lighter;
+      color: #afafaf;
+      transition: 0.3s;
+}
+
+.media {
+    position: absolute;
+    top: 60%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.media ul li {
+      display: inline-block !important;
+      color: #afafaf;
+      margin-left: 10px;
+      font-size: 18px;
+}
+
+.nav .menu ul li:hover #tag {
+      color: #a66f2c;
+      transition: 1s;
+}
+
+#menu {
+  background: linear-gradient(#5B5B5B,#5B5B5B) left no-repeat, #afafaf;
+  background-size:0% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 1s;
+}
+
+#menu:hover {
+  background-size:100% 100%;
+}
+
+.bg-logo {
+    position: absolute;
+    width: 100%;
+    height: 15vh;
+    left: 4em;
+    justify-content: flex-end;
+}
+
+.bg-block {
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    background: red;
+    top: 0.4em;
+}
+
+.logo {
+      display: block;
+      background: url(logo.png) no-repeat 50% 50%;
+      background-size: contain;
+}
+
+.bg1 {
+      display: block;
+      background: url(01.jpg) no-repeat 50% 50%;
+      background-size: cover;
+}
+
+
+.bg2 {
+      display: block;
+      background: url(02.jpg) no-repeat 50% 50%;
+      background-size: cover;
+}
+
+
+.bg3 {
+      display: block;
+      background: url(03.jpg) no-repeat 50% 50%;
+      background-size: cover;
+}
+
+
+.bg4 {
+      display: block;
+      background: url(04.jpg) no-repeat 50% 50%;
+      background-size: cover;
+}
+
+
+.bg5 {
+      display: block;
+      background: url(05.jpg) no-repeat 50% 50%;
+      background-size: cover;
+}
+
+.hide {
+      display: none;
+}
+
+@media(max-width: 768px) {
+      .images {
+            display: none;
+      }
+
+      .nav .menu {
+            width: 0%;
+            left: 0%;
+      }
+
+      .menu ul {
+            margin-top: 80px;
+            margin-left: -20px;
+
+      }
+
+      .nav .menu ul {
+            left: 40%;   
+      }
+
+      .menu-strip {
+            width: 100%;
+      }
+
+      .toggle-btn {
+            position: absolute;
+            transform: translate(-50%, -90%);
+
+      }
+
+      .menu li #menu {
+            font-size: 16px;
+      }
+
+      #tag{
+            display: none;
+      }
+
+      #order {
+            display: none;
+      }
+      
+      P {
+        top: 40%;
+
+      }
+      .title{
+        top:30%;
+        text-align: center;
+        line-height: 1.6
+      }
+
+      .media {
+        position: absolute;
+        top: 53%;
+        left: 100%;
+        transform: translate(-50%, -50%);
+        color: black;
+      }
+      
+      .share{
+      display: block;
+      background: url(share.svg) no-repeat 50% 50%;
+      background-size: contain;
+      justify-content: flex-end;
+
+}
+
+
+}
