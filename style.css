@@ -214,10 +214,11 @@ h1 {
       .menu ul {
             margin-top: 80px;
             margin-left: -20px;
-
       }
-
       .nav .menu ul {
+            list-style: none;
+            position: absolute;
+            top: 30%;
             left: 40%;   
       }
 
@@ -248,26 +249,30 @@ h1 {
 
       }
       .title{
-        top:30%;
-        text-align: center;
-        line-height: 1.6
+            top:30%;
+            text-align: center;
+            line-height: 1.6
       }
 
       .media {
-        position: absolute;
-        top: 53%;
-        left: 100%;
-        transform: translate(-50%, -50%);
-        color: black;
+            position: absolute;
+            top: 53%;
+            left: 100%;
+            transform: translate(-50%, -50%);
+            color: black;
       }
       
       .share{
-      display: block;
-      background: url(share.svg) no-repeat 50% 50%;
-      background-size: contain;
-      justify-content: flex-end;
+            display: block;
+            background: url(share.svg) no-repeat 50% 50%;
+            background-size: contain;
+            justify-content: flex-end;
 
-}
+      }
 
+      .bg-block {
+            top: 3%;
+            left: 49%;
+      }
 
 }
