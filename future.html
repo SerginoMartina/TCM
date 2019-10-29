@@ -5,22 +5,23 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>The creative minds</title>
-      <link rel="stylesheet" href="/css/style.css">
+      <link rel="stylesheet" href="style.css">
       <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
       <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 </head>
-<body class="projects.html">
+<body>
       <div class="wrapper">
-
+        
             <div class="outer-content">
+            
                   <div class="title">
-                        <h1>Projecten</h1>
+                        <h1>Goals</h1>
                   </div>
                   <div class="content">
-                        <p>Hieronder de projecten van 2019</p>
+                        <p>content</p>
                   </div>
-            </div>
+           
             
             </div>
 
@@ -35,14 +36,14 @@
                   </div>
 
                    <div class="media">
-                  
+                        <div class="Share"></div>
                         <ul>
                               <li><ion-icon name="logo-facebook"></ion-icon></li>
                               <li><ion-icon name="logo-instagram"></ion-icon></li>
                               <li><ion-icon name="logo-twitter"></ion-icon></li>
                               <li><ion-icon name="logo-youtube"></ion-icon></li>
                         </ul>
-                       
+                        </div>
             </div>
 
             <div class="menu">
@@ -51,7 +52,7 @@
                         <div class="menu">
                         <ul>
                               <li class="menu-item-1">
-                                    <a href="/">
+                                    <a href="index.html">
                                     <span id="order">01. </span>
                                     <span id="menu">&nbsp;Home /</span>
                                     <span id="tag">intro</span>
@@ -91,6 +92,8 @@
                   </div>
 
             </div>
+
+                
       </div>
 
       <script type="text/javascript">
@@ -108,11 +111,15 @@
 
       t1.staggerFrom(".menu ul li", 0.2, {y: 20 , opacity: 0, ease: Expo.easeInOut}, 0.1);
 
+     
+
       t1.reverse();
       $(document).on("click", ".toggle-btn", function() {
             t1.reversed(!t1.reversed());
       });
-     
+      $(document).on("click", "#menu", function() {
+            t1.reversed(!t1.reversed());
+      });
        $(document).on("click", "#share", function() {
             t1.reversed(!t1.reversed());
       });
