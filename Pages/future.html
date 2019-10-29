@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>The creative minds</title>
+      <link rel="stylesheet" href="CSS/style.css">
+      <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+      <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+</head>
+<body>
+      <div class="wrapper">
+
+            <div class="outer-content">
+                  <div class="title">
+                        <h1>Future</h1>
+                  </div>
+                  <div class="content">
+                        <p>Sergino</p>
+                  </div>
+            </div>
+            
+            </div>
+
+            <div class="menu-strip">
+
+                  <div class="bg-logo">
+                        <span class="bg-block logo"></span>
+                  </div>
+
+                  <div class="toggle-btn">
+                        <ion-icon name="menu"></ion-icon>
+                  </div>
+
+                   <div class="media">
+                        
+                        <ul>
+                              <li><ion-icon name="logo-facebook"></ion-icon></li>
+                              <li><ion-icon name="logo-instagram"></ion-icon></li>
+                              <li><ion-icon name="logo-twitter"></ion-icon></li>
+                              <li><ion-icon name="logo-youtube"></ion-icon></li>
+                        </ul>
+                       
+            </div>
+
+            <div class="menu">
+
+                  <div class="nav">
+                        <div class="menu">
+                        <ul>
+                              <li class="menu-item-1">
+                                    <a href="/">
+                                    <span id="order">01. </span>
+                                    <span id="menu">&nbsp;Home /</span>
+                                    <span id="tag">intro</span>
+                                    </a>
+                              </li>
+                              <li class="menu-item-2">
+                                    <a href="past.html">
+                                    <span id="order">02. </span>
+                                    <span id="menu">&nbsp;Past /</span>
+                                    <span id="tag">the beginning</span>
+                                    </a>
+                              </li>
+                              <li class="menu-item-3">
+                                    <a href="project.html">
+                                    <span id="order">03. </span>
+                                    <span id="menu">&nbsp;Portfolio /</span>
+                                    <span id="tag">work I have done</span>
+                                    </a>
+                              </li>
+                              <li class="menu-item-4">
+                                    <a href="future.html">
+                                    <span id="order">04. </span>
+                                    <span id="menu">&nbsp;Future /</span>
+                                    <span id="tag">the pursuit</span>
+                                    </a>
+                              </li>
+                              <li class="menu-item-5">
+                                    <a href="contact.html">
+                                    <span id="order">05. </span>
+                                    <span id="menu">&nbsp;Contact /</span>
+                                    <span id="tag">Let us create</span>
+                                    </a>
+                              </li>
+                        </ul>
+                        </div>
+                       
+                  </div>
+
+            </div>
+      </div>
+
+      <script type="text/javascript">
+
+      var t1 = new TimelineMax({paused: true});
+
+      t1.to(".outer-content .title, p", 1, {
+            opacity: 0
+      });
+
+      t1.to(".menu", 1, {
+            width: "45%",
+            ease: Expo.easeInOut
+      }, "-=1");
+
+      t1.staggerFrom(".menu ul li", 0.2, {y: 20 , opacity: 0, ease: Expo.easeInOut}, 0.1);
+
+      t1.reverse();
+      $(document).on("click", ".toggle-btn", function() {
+            t1.reversed(!t1.reversed());
+      });
+     
+       $(document).on("click", "#share", function() {
+            t1.reversed(!t1.reversed());
+      });
+
+      </script>
+</body>
+</html>
