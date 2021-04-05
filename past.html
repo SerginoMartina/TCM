@@ -6,6 +6,7 @@
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>The creative minds</title>
       <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="about.css">
       <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
       <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
@@ -84,9 +85,22 @@
                
             <div class="content">
                   <div class="container">
-                        About me
-                  </div>
+                        <div class="about-component">
+                        <h1 class="about">About me</h1>
+                        <p>I remember </p>
+                     <p>The world </p>
+                     <p>For my  </p>
+                     <p>All for  </p>
+                     <p>Skills </p>
+                     <p>Before </p>
+                     <p>My story </p>
+                     <p> Please read the future if your interested
+                        -2021
+                        </p>
+                    
+                                      </div>
              </div>
+            </div>
                 
       </div>
 
@@ -94,7 +108,7 @@
 
       var t1 = new TimelineMax({paused: true});
 
-      t1.to(".outer-content .title, p", 1, {
+      t1.to(".container", 1, {
             opacity: 0
       });
 
@@ -119,5 +133,6 @@
       });
 
       </script>
+
 </body>
 </html>
