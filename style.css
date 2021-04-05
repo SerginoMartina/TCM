@@ -7,20 +7,48 @@ html, body{
 }
 
 
-@media only screen and (max-width: 512px) {
+@media only screen and (min-width: 320px) {
       .hero {
             display: block;
-            background: url(img/hero.jpg) no-repeat -30% -150%;
+            background: url(img/hero.jpg) no-repeat 35%;
             background-size: cover;
-            width: 80%;
+            width: 100%;
             height: 100vh;
             margin: 0;
             padding: 0;
             z-index: -1;
         }
+
+        .home_title {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 230px;
+            font-size: 11px;
+            line-height: 2.3;
+        }
+
+        .home_title_second {
+            position: absolute;
+            top: 91%;
+            left: 51%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 1.2em;
+            text-align: center;
+            line-height: 1.6;
+            background: #000000c9;
+            padding: 20px;
+            font-size: 0.6em;
+            width: 200px;
+            letter-spacing: 9px;
+            line-height: 2em;
+        }
     }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 600px) {
       .hero {
             display: block;
             background: url(img/hero.jpg) no-repeat -40%;
@@ -45,6 +73,27 @@ html, body{
             z-index: -1;
             float: right;
         }
+
+        .home_title {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        
+        .home_title_second {
+            position: absolute;
+            top: 88%;
+            left: 55%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 0.6em;
+            text-align: center;
+            line-height: 2;
+            background: #000000c9;
+            padding: 20px;
+        }        
 }
 
 .content {
@@ -52,37 +101,19 @@ html, body{
   }
 
   .container {
-      width: 1150px;
+      width: 100%;
       margin: 0 auto;
+      max-width: 1150px;
   }
+  
 
-.title {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
-.title h1 {
-      text-align: center;
-  }
 
 a {
     text-decoration: none;
 }
 
-p {
-    position: absolute;
-    top: 88%;
-    left: 55%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 1.2em;
-    text-align: center;
-    line-height: 1.6;
-    background: #000000c9;
-    padding: 20px;
-}
+
 
 h1 {
     text-transform: uppercase;
@@ -147,6 +178,7 @@ h1 {
     left: 36%;
     transform: translate(-50%, -50%);
     cursor: pointer;
+    z-index: 555;
 }
 .nav .menu ul li {
     color: gray;
@@ -154,6 +186,10 @@ h1 {
     font-size: 30px;
     line-height: 60px;
 }
+
+ul:focus {
+      outline: none;
+  }
 
 #order {
       font-size: 16px;
@@ -335,12 +371,4 @@ h1 {
             top: 3%;
             left: 49%;
       }
-      html, body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100vh;
-            background: url(img/hero.jpg) no-repeat 50% 25%;
-            background-size: cover;
-            font-family: Helvetica;
-      }
+}
