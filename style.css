@@ -207,7 +207,7 @@ ul:focus {
 .media {
     position: absolute;
     top: 60%;
-    left: 80%;
+    left: 90%;
     transform: translate(-50%, -50%);
 }
 
@@ -295,6 +295,31 @@ ul:focus {
 .hide {
       display: none;
 }
+
+.tile {
+      padding: 20px;
+      background: rgb(113, 113, 113);
+      height: 700px;
+      width: 490px;
+      margin-top: 65px;
+      justify-content: center;
+      align-items: flex-end;
+      display: flex;
+      font-family: "Roboto";
+      font-size: 1.2em;
+      transition: 3s ease;
+  }
+
+  .portfolio {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+  }
+
+  .tile:hover{
+      background: white;
+
+  }
 
 @media(max-width: 768px) {
       .images {
