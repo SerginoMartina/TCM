@@ -379,6 +379,10 @@ ul:focus {
     justify-content: flex-end;
   }
 
+  .toggle-btn {
+      cursor: pointer;
+  }
+
   .bg-block {
     top: 3%;
     left: 49%;
