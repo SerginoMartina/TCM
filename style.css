@@ -223,7 +223,7 @@ ul:focus {
 
 .videowrapper {
       overflow: hidden;
-      height: 150%;
+      height: 100%;
       position: absolute;
       width: 85%;
       left: 15%;
