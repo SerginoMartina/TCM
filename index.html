@@ -2,128 +2,14 @@
 <html lang="en">
 <head>
       <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>The creative minds</title>
+      <title>Document</title>
       <link rel="stylesheet" href="style.css">
-      <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
-      <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 </head>
 <body>
-      <div class="wrapper">
-            <div class="menu-strip">
+      hello world
 
-                  <div href="index.html" class="bg-logo">
-                        <span class="bg-block logo"></span>
-                  </div>
-
-                  <div class="toggle-btn">
-                        <ion-icon name="menu"></ion-icon>
-                  </div>
-
-                   <div class="media">
-                        <div class="Share"></div>
-                        <ul>
-                              <li><ion-icon name="logo-facebook"></ion-icon></li>
-                              <li><ion-icon name="logo-instagram"></ion-icon></li>
-                              <li><ion-icon name="logo-twitter"></ion-icon></li>
-                              <li><ion-icon name="logo-youtube"></ion-icon></li>
-                        </ul>
-                        </div>
-            </div>
-
-            <div class="menu">
-
-                  <div class="nav">
-                        <div class="menu">
-                        <ul>
-                              <li class="menu-item-1">
-                                    <a href="index.html">
-                                    <span id="order">01. </span>
-                                    <span id="menu">&nbsp;Home /</span>
-                                    <span id="tag">intro</span>
-                                    </a>
-                              </li>
-                              <li class="menu-item-2">
-                                    <a href="past.html">
-                                    <span id="order">02. </span>
-                                    <span id="menu">&nbsp;Past /</span>
-                                    <span id="tag">the beginning</span>
-                                    </a>
-                              </li>
-                              <li class="menu-item-3">
-                                    <a href="projects.html">
-                                    <span id="order">03. </span>
-                                    <span id="menu">&nbsp;Portfolio /</span>
-                                    <span id="tag">work I have done</span>
-                                    </a>
-                              </li>
-                              <li class="menu-item-4">
-                                    <a href="future.html">
-                                    <span id="order">04. </span>
-                                    <span id="menu">&nbsp;Future /</span>
-                                    <span id="tag">the pursuit</span>
-                                    </a>
-                              </li>
-                              <li class="menu-item-5">
-                                    <a href="contact.html">
-                                    <span id="order">05. </span>
-                                    <span id="menu">&nbsp;Contact /</span>
-                                    <span id="tag">Let us create</span>
-                                    </a>
-                              </li>
-                        </ul>
-                        </div>
-                       
-                  </div>
-
-            </div>
-            
-             
-                        <h1 class="home_title">Full-stack Ontwikkelaar</h1>
-                        <p class="home_title_second">GRAPHIC | UX DESIGNER</p>
-
-                <div class="hero"></div>
-
-                <div class="videowrapper">
-                <video autoplay muted loop id="myVideo">
-                  <source src="f694690e6b54b7ac498346a09b2b5bd4.mp4" type="video/mp4">
-                  Your browser does not support HTML5 video.
-                </video>
-                  </div>
-
-                </div>
-      </div>
-
-      <script type="text/javascript">
-
-      var t1 = new TimelineMax({paused: true});
-
-      t1.to("h1, p", 1, {
-            opacity: 0
-      });
-
-      t1.to(".menu", 1, {
-            width: "45%",
-            ease: Expo.easeInOut
-      }, "-=1");
-
-      t1.staggerFrom(".menu ul li", 0.2, {y: 20 , opacity: 0, ease: Expo.easeInOut}, 0.1);
-
-     
-
-      t1.reverse();
-      $(document).on("click", ".toggle-btn", function() {
-            t1.reversed(!t1.reversed());
-      });
-      $(document).on("click", "#menu", function() {
-            t1.reversed(!t1.reversed());
-      });
-       $(document).on("click", "#share", function() {
-            t1.reversed(!t1.reversed());
-      });
-
-      </script>
+      <div class="img"></div>
 </body>
 </html>
